@@ -26,13 +26,23 @@
             box-shadow: 1px 3px 9px #eeeeee7d;
 
         }
+        i{
+            font-size: 40px;
+            margin: 20px;
+            color: antiquewhite;
+        }
     </style>
 </head>
 <body>
-    <div id="root">
-        <img v-bind:src="images[counter]" alt="">
-    </div>
 
+ 
+    <div id="root">
+        <i class="fas fa-chevron-left"></i>
+        <img v-bind:src="images[counter]" alt="">
+        <i class="fas fa-chevron-right"></i>
+
+    </div>
+    
      <!-- VUE JS -->
      <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
      <!-- JS -->
