@@ -13,10 +13,14 @@ const app = new Vue({
     methods:{
         left(){
             console.log('Click on left arrow');
+            if(this.counter === this.images.length -1 ){
+                return this.counter = 0
+            }
+            return this.counter -=1
         },
         right(){
             console.log('Click on right arrow');
-            if(this.counter === this.images.length){
+            if(this.counter === this.images.length -1){
                 return this.counter = 0
             }
             return this.counter +=1
