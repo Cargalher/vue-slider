@@ -13,8 +13,8 @@ const app = new Vue({
     methods:{
         left(){
             console.log('Click on left arrow');
-            if(this.counter === this.images.length -1 ){
-                return this.counter = 0
+            if(this.counter === 0){
+                return this.counter = this.images.length -1
             }
             return this.counter -=1
         },

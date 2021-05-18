@@ -17,6 +17,7 @@
             justify-content: center;
             height:100vh;
             align-items: center;
+           
         }
         img{
             width:500px;
@@ -24,13 +25,29 @@
             object-fit: cover;
             border-radius: 10px;
             box-shadow: 1px 3px 9px #eeeeee7d;
+             position: relative;
 
         }
-        i{
+        .fa-chevron-left, .fa-chevron-right{
             font-size: 40px;
             margin: 20px;
             color: antiquewhite;
         }
+        .fa-circle{
+            color: antiquewhite;
+            margin: 0 15px;
+            
+        }
+        .circle{
+            
+            background-color: rgb(0 0 0 / 71%);
+            border-radius: 30px;
+            padding:5px 15px;
+            position: absolute;
+            bottom: 140px;
+            
+        }
+        
     </style>
 </head>
 <body>
@@ -40,8 +57,14 @@
         <div class="left" @click="left">
             <i class="fas fa-chevron-left"></i>
         </div>
-
         <img v-bind:src="images[counter]" alt="">
+        <div class="circle">
+            <i class="fas fa-circle"></i>
+            <i class="fas fa-circle"></i>
+            <i class="fas fa-circle"></i>
+            <i class="fas fa-circle"></i>
+        </div>
+        
 
         <div class="right" @click="right">
              <i class="fas fa-chevron-right"></i>
