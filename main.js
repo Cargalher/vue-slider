@@ -8,5 +8,7 @@ const app = new Vue({
             "./img/lamb.jpg",
             "./img/giraff.jpg"
         ]
+        left:
+        right:
     }
 })
