@@ -24,6 +24,11 @@ const app = new Vue({
                 return this.counter = 0
             }
             return this.counter +=1
-        }
+        },
+       dotimages(counter){
+           
+       return this.counter = counter;
+           
+       }
     }
 })
