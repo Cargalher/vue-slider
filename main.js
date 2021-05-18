@@ -7,8 +7,15 @@ const app = new Vue({
             "./img/lion.jpg",
             "./img/lamb.jpg",
             "./img/giraff.jpg"
-        ]
-        left:
-        right:
+        ],
+       
+    },
+    methods:{
+        left(){
+            console.log('Click on left arrow');
+        },
+        right(){
+            console.log('Click on right arrow');
+        }
     }
 })
