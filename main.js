@@ -41,7 +41,7 @@ const app = new Vue({
             this.left();
            }
         })
-
+        // bonus_interval of 5 seconds applied to make pictures changing automatically every 5 secs.
         setInterval(this.right, 5000)
     }
 })
