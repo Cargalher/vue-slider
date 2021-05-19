@@ -44,14 +44,14 @@
                 border-radius: 30px;
                 padding:5px 15px;
                 position: absolute;
-                bottom: 227px;
+                bottom: 333px;
+                left:44%;
                 
             }
-            .fa-circle:active{
+            .active{
                 color: rgb(22, 65, 22);
-                
             }
-            
+           
         </style>
     </head>
     <body>
@@ -61,12 +61,13 @@
             <div class="left" @click="left">
                 <i class="fas fa-chevron-left"></i>
             </div>
-            <img :src="images[counter]" alt="">
-            <div class="circle">
-                <i class="fas fa-circle" v-for="(item,index) in images" @click ="dotimages(index)"></i>
-                
+            <div class="gallery">
+                <img :src="images[counter]" alt="">
+                <nav class="circle">
+                    <!-- showing the circles  -->
+                    <i class="fas fa-circle" :class="counter === index ? 'active' : '' " v-for="(item,index) in images" @click ="dotimages(index)"></i>
+                </nav>
             </div>
-            
     
             <div class="right" @click="right">
                  <i class="fas fa-chevron-right"></i>

@@ -27,8 +27,21 @@ const app = new Vue({
         },
        dotimages(counter){
            
-       return this.counter = counter;
-           
+        return this.counter = counter; 
        }
+
+    },
+    mounted(){
+        // add event listener for key events 
+        document.addEventListener('keyup', (e) =>{
+           if (e.key === 'ArrowRight'){
+               this.right();
+           }
+           if(e.key === 'ArrowLeft'){
+            this.left();
+           }
+        })
+
+        setInterval(this.right, 5000)
     }
 })
