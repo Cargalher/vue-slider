@@ -19,6 +19,11 @@
                 align-items: center;
                
             }
+            h1{
+                text-align: center;
+                color: antiquewhite;
+              
+            }
             img{
                 width:500px;
                 height:300px;
@@ -44,7 +49,7 @@
                 border-radius: 30px;
                 padding:5px 15px;
                 position: absolute;
-                bottom: 333px;
+                bottom: 300px;
                 left:44%;
                 
             }
@@ -61,7 +66,9 @@
             <div class="left" @click="left">
                 <i class="fas fa-chevron-left"></i>
             </div>
+            
             <div class="gallery">
+                <h1>{{title}}</h1>
                 <img :src="images[counter]" alt="">
                 <nav class="circle">
                     <!-- showing the circles  -->

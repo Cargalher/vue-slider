@@ -1,6 +1,7 @@
 const app = new Vue({
     el: '#root',
     data:{
+        title: 'Be kind to Every Kind',
         counter:0,
         images: [
             "./img/elephants.jpg",
